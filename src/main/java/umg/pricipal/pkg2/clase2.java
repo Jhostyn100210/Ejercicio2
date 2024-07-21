@@ -1,27 +1,20 @@
 package umg.pricipal.pkg2;
 
 public class clase2 {
-    public static double calcularAreaCirculo(double radio) {
-        return Math.PI * radio * radio;
-    }
 
-    public static double calcularCircunferenciaCirculo(double radio) {
-        return 2 * Math.PI * radio;
-    }
 
-    public static double calcularVolumenCubo(double lado) {
-        return lado * lado * lado;
-    }
-
-    public static double calcularAreaPiramideCuadrada(double base, double altura) {
+    // Área de una pirámide cuadrada
+    public static double areaPiramideCuadrada(double base, double altura) {
         return (base * altura) / 2;
     }
 
-    public static double calcularVolumenPiramideCuadrada(double base, double altura) {
-        return (base * altura) / 3; // Corregido: Volumen de la pirámide cuadrada
+    // Volumen de una pirámide cuadrada
+    public static double volumenPiramideCuadrada(double base, double altura) {
+        return (Math.pow(base, 2) * altura) / 3;
     }
 
-    public static double calcularAreaTriangulo(double base, double altura) {
+    // Área de un triángulo
+    public static double areaTriangulo(double base, double altura) {
         return (base * altura) / 2;
     }
 }

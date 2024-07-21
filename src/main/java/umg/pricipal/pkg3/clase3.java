@@ -1,15 +1,18 @@
 package umg.pricipal.pkg3;
 
 public class clase3 {
-    public static double calcularVolumenPrismaRectangular(double base, double altura) {
+    // Volumen de un prisma rectangular
+    public static double volumenPrismaRectangular(double areaBase, double altura) {
+        return areaBase * altura;
+    }
+
+    // Área de un paralelogramo
+    public static double areaParalelogramo(double base, double altura) {
         return base * altura;
     }
 
-    public static double calcularAreaParalelogramo(double base, double altura) {
-        return base * altura;
-    }
-
-    public static double calcularVolumenCilindro(double radio, double altura) {
-        return Math.PI * radio * radio * altura;
+    // Volumen de un cilindro
+    public static double volumenCilindro(double radio, double altura) {
+        return Math.PI * Math.pow(radio, 2) * altura;
     }
 }
